@@ -36,6 +36,8 @@ namespace VowelShifter
             Console.Write("Enter a sentence: ");
             string input = Console.ReadLine();
             
+            
+
             // In C#, strings can be accessed similar to arrays
             Console.WriteLine($"Before: {input}");
 
@@ -45,18 +47,58 @@ namespace VowelShifter
                 // Let's grab one character from the input at index i
                 char current = input[i];
                 
-                // Turn any 'e' to a '3'
-                if (current == 'e')
-                {
-                    current = '3';
-                }
-                
-                // Make every other letter uppercase
-                if (i % 2 == 0)
-                {
-                    current = Char.ToUpper(current);
-                }
-                
+
+                    if (current == 'a')
+                    {
+                        current = 'e';
+                        
+                    } 
+                    else if (current == 'e')
+                    {
+                        current = 'i';
+                        
+                    } 
+                    else if (current == 'i')
+                    {
+                        current = 'o';
+                        
+                    } 
+                    else if (current == 'o')
+                    {
+                        current = 'u';
+                        
+                    } 
+                    else if (current == 'u')
+                    {
+                        current = 'a';
+                        
+                    } 
+                    
+                    if (current == 'A')
+                    {
+                        current = 'E';
+                        
+                    } 
+                    else if (current == 'E')
+                    {
+                        current = 'I';
+                        
+                    } 
+                    else if (current == 'I')
+                    {
+                        current = 'O';
+                        
+                    } 
+                    else if (current == 'O')
+                    {
+                        current = 'U';
+                        
+                    } 
+                    else if (current == 'U')
+                    {
+                        current = 'A';
+                        
+                    } 
                 output += current;
             }
             
